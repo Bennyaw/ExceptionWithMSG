@@ -3,24 +3,37 @@
   :path: test
   :file: test_Exception.c
 :successes:
+- :test: test_printAllNumbers
+  :line: 103
+  :message: ''
+- :test: test_add_given_1_2_3_4_5_expect_15
+  :line: 109
+  :message: ''
+- :test: test_add_given_9_8_7_expect_24
+  :line: 116
+  :message: ''
+- :test: test_add_given_6_28_2_0_10_1_expect_47
+  :line: 123
+  :message: ''
 - :test: test_getName_given_1_expect_David
-  :line: 35
+  :line: 130
   :message: ''
 - :test: test_getName_given_minus_1_expect_ERR_OUT_OF_BOUND
-  :line: 53
+  :line: 148
   :message: ''
 - :test: test_getName_given_4_expect_ERR_OUT_OF_BOUND
-  :line: 71
+  :line: 167
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 3
-  :passed: 3
+  :total: 7
+  :passed: 7
   :failed: 0
   :ignored: 0
 :stdout:
-- 'Under test_getName_given_minus_1_expect_ERR_OUT_OF_BOUND '
-- 'Error: Out of bound of the array.'
-- 'Under test_getName_given_4_expect_ERR_OUT_OF_BOUND '
-- 'Error: Out of bound of the array.'
+- 123.567800,6342,ff,Ooi
+- 'Error: Out of bound of the array. Index given was -1.Under test_getName_given_minus_1_expect_ERR_OUT_OF_BOUND '
+- "(error code : 3)"
+- 'Error: Out of bound of the array. Index given was 4.Under test_getName_given_4_expect_ERR_OUT_OF_BOUND '
+- 'Error: Out of bound of the array. Index given was 4.'

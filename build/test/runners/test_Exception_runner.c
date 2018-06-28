@@ -34,6 +34,10 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
+extern void test_printAllNumbers(void);
+extern void test_add_given_1_2_3_4_5_expect_15(void);
+extern void test_add_given_9_8_7_expect_24(void);
+extern void test_add_given_6_28_2_0_10_1_expect_47(void);
 extern void test_getName_given_1_expect_David(void);
 extern void test_getName_given_minus_1_expect_ERR_OUT_OF_BOUND(void);
 extern void test_getName_given_4_expect_ERR_OUT_OF_BOUND(void);
@@ -52,9 +56,13 @@ void resetTest(void)
 int main(void)
 {
   UnityBegin("test_Exception.c");
-  RUN_TEST(test_getName_given_1_expect_David, 35);
-  RUN_TEST(test_getName_given_minus_1_expect_ERR_OUT_OF_BOUND, 53);
-  RUN_TEST(test_getName_given_4_expect_ERR_OUT_OF_BOUND, 71);
+  RUN_TEST(test_printAllNumbers, 103);
+  RUN_TEST(test_add_given_1_2_3_4_5_expect_15, 109);
+  RUN_TEST(test_add_given_9_8_7_expect_24, 116);
+  RUN_TEST(test_add_given_6_28_2_0_10_1_expect_47, 123);
+  RUN_TEST(test_getName_given_1_expect_David, 130);
+  RUN_TEST(test_getName_given_minus_1_expect_ERR_OUT_OF_BOUND, 148);
+  RUN_TEST(test_getName_given_4_expect_ERR_OUT_OF_BOUND, 167);
 
   return (UnityEnd());
 }
