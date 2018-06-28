@@ -1,0 +1,26 @@
+---
+:source:
+  :path: test
+  :file: test_Exception.c
+:successes:
+- :test: test_getName_given_1_expect_David
+  :line: 35
+  :message: ''
+- :test: test_getName_given_minus_1_expect_ERR_OUT_OF_BOUND
+  :line: 53
+  :message: ''
+- :test: test_getName_given_4_expect_ERR_OUT_OF_BOUND
+  :line: 71
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 3
+  :passed: 3
+  :failed: 0
+  :ignored: 0
+:stdout:
+- 'Under test_getName_given_minus_1_expect_ERR_OUT_OF_BOUND '
+- 'Error: Out of bound of the array.'
+- 'Under test_getName_given_4_expect_ERR_OUT_OF_BOUND '
+- 'Error: Out of bound of the array.'
